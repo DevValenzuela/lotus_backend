@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/medicaments",
+      "handler": "medicament.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medicaments/count",
+      "handler": "medicament.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medicaments/:id",
+      "handler": "medicament.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/medicaments",
+      "handler": "medicament.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/medicaments/:id",
+      "handler": "medicament.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/medicaments/:id",
+      "handler": "medicament.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

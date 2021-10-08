@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medicaments",
+  "info": {
+    "name": "Medicament"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "last_dose": {
+      "type": "string"
+    },
+    "medicament": {
+      "type": "string"
+    },
+    "posologia": {
+      "type": "string"
+    },
+    "dosis": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "notation": {
+      "type": "text"
+    },
+    "mascot": {
+      "model": "mascot"
+    }
+  }
+}

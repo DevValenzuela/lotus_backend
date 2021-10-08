@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vaccinations",
+  "info": {
+    "name": "Vaccination"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "last_vaccinations": {
+      "type": "string"
+    },
+    "medicament": {
+      "type": "string"
+    },
+    "Nota": {
+      "type": "text"
+    },
+    "mascot": {
+      "model": "mascot"
+    }
+  }
+}

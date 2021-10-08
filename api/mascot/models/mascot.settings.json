@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mascot",
+  "info": {
+    "name": "mascot",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_mascot": {
+      "type": "string",
+      "required": true
+    },
+    "age_mascot": {
+      "type": "integer"
+    },
+    "type_mascot": {
+      "type": "string"
+    },
+    "race_mascot": {
+      "type": "string",
+      "required": false
+    },
+    "date_sterilized": {
+      "type": "string"
+    },
+    "number_microchip": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "avatar_mascot": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "microchip": {
+      "type": "string"
+    },
+    "sterilized": {
+      "type": "string"
+    }
+  }
+}

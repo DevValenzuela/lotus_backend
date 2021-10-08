@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/controller-medicts",
+      "handler": "controller-medict.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/controller-medicts/count",
+      "handler": "controller-medict.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/controller-medicts/:id",
+      "handler": "controller-medict.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/controller-medicts",
+      "handler": "controller-medict.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/controller-medicts/:id",
+      "handler": "controller-medict.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/controller-medicts/:id",
+      "handler": "controller-medict.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

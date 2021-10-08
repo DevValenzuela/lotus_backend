@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "controller_medicts",
+  "info": {
+    "name": "controller_medict"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "last_control": {
+      "type": "string"
+    },
+    "assesment": {
+      "type": "text"
+    },
+    "nota": {
+      "type": "text"
+    },
+    "mascot": {
+      "model": "mascot"
+    }
+  }
+}
